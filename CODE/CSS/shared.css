@@ -31,6 +31,7 @@ body, #fbody, #main_container{
     width: 100%;
     display: flex;
     flex-direction: column;
+    flex: 1;
 }
 #fbody{
 	flex: 1;
