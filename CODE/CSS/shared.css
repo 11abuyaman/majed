@@ -17,12 +17,8 @@ body {
 	background-attachment: fixed;
 	background-size: cover;
 	font-family: 'bahij';
-	display: flex;
-	flex: 1;
 }
 html{
-	display: flex;
-	height: 100%;
 }
 #main_container{
 	display: flex;
