@@ -1,6 +1,16 @@
-#middle{
-	background-image: url('../IMAGES/borderp/bodywbg.png');
+#header{
+	background-color: #8f9a00;
 }
+#header_links_container_mobile{
+	background-color: #838601;
+}
+#header_divider {
+    background-color: #b6cb00;
+}
+#middle {
+    background-image: url(../IMAGES/border/contactusbody.png);
+}
+
 form{
 	width: 100%;
 }
@@ -17,6 +27,7 @@ button{
 	color: #fff;
 	margin-right: 20px;
 	padding: 0 25px;
+	text-align: right;
 }
 textarea{
 	resize: none;

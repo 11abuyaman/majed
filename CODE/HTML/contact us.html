@@ -16,6 +16,8 @@
 	<script type="text/javascript">
 		function mobile_menu(){
 			$('#header_links_container_mobile').toggle();
+			$('#menu_icon').toggle();
+  			$('#close_menu_icon').toggle();
 		}
 	</script>
 </head>
@@ -42,7 +44,7 @@
 					</div>
 					<div id="header_divider"></div>
 					<div id="header_divider_mobile">
-						<img src="../IMAGES/phone/2.png">
+						<img src="../IMAGES/header/contactusheaderdivider.png">
 					</div>
 				</div>
 				<div id="header_links_container">
@@ -54,19 +56,20 @@
 					<div class="header_link" id="header_five"><a href="#">الصفحة الرئيسية</a></div>
 				</div>
 				<div id="header_links_container_mobile">
-					<a href="#">تجربة</a>
-					<a href="#">تجربة</a>
-					<a href="#">تجربة</a>
-					<a href="#">تجربة</a>
-					<a href="#">تجربة</a>
+					<a href="#">الصفحة الرئيسية</a>
+					<a href="#">من نحن</a>
+					<a href="#">القناة</a>
+					<a href="#">المجلة</a>
+					<a href="#">تواصل معنا</a>
 				</div>
 			</div>
 		</div>
 		<div id="main_container">
 			<div id="fbody" class="container">
 				<div id="content">
+					<div id="content_background"></div>
 					<div id="topborder">
-						<img src="../IMAGES/borderp/topwbg.png">
+						<img src="../IMAGES/border/contactustop.png">
 					</div>
 					<div id="middle">
 						<div id="middle_content">
@@ -95,25 +98,28 @@
 						</div>
 					</div>
 					<div id="bottomborder">
-						<img src="../IMAGES/borderp/bottomwbg.png">
+						<img src="../IMAGES/border/contactusbottom.png">
 					</div>
 				</div>
 			</div>
 		</div>
 		<div id="footer" class="container">
 			<div id="footer_content">
-				<div id="header_social">
-					<a href="#"><i class="fab fa-youtube"></i></a>
-					<a href="#"><i class="fab fa-instagram"></i></a>
-					<a href="#"><i class="fab fa-facebook-square"></i></a>
-					<a href="#"><i class="fab fa-twitter"></i></a>
+				<div id="footer_social">
+					<div id="">
+						<a href="#"><i class="fab fa-youtube"></i></a>
+						<a href="#"><i class="fab fa-instagram"></i></a>
+						<a href="#"><i class="fab fa-facebook-square"></i></a>
+						<a href="#"><i class="fab fa-twitter"></i></a>
+					</div>
+					<div style="direction: rtl;">
+						<img id="footerminimajedlogo" src="../IMAGES/footer/footerminilogo.png" style="transform: scale(0.7);">ماجد  © 2019. جميع الحقوق محفوظة.
+					</div>
 				</div>
-				<div style="direction: rtl;">
-					ماجد  © 2019. جميع الحقوق محفوظة.
-				</div>
-				<div>
-					<img src="../IMAGES/footerlogo1.png">
-					<img src="../IMAGES/footerlogo2.png">
+				
+				<div id="footer_logos">
+					<img src="../IMAGES/footer/footerlogo1.png">
+					<img id="footermajedlogo" src="../IMAGES/footer/footerlogo2.png">
 				</div>
 			</div>
 			<img id="footer_background" src="../IMAGES/footer.png">
