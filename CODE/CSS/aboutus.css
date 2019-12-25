@@ -1,3 +1,6 @@
+#middle {
+    background-image: url(../IMAGES/border/aboutusbody.png);
+}
 #majed_text{
 	display: flex;
 	flex-direction: row-reverse;
@@ -12,6 +15,7 @@
 #header_links_container_mobile{
 	background-color: #3778FA;
 }
+
 
 /* MOBILE SIZING STYLES */
 @media only screen and (max-device-width: 480px) {
