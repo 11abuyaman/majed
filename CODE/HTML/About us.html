@@ -7,6 +7,7 @@
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 	<link rel="stylesheet" type="text/css" href="../CSS/shared.css">
+	<link rel="stylesheet" type="text/css" href="../CSS/aboutus.css">
 	<script src="https://kit.fontawesome.com/c0ef09bfb1.js" crossorigin="anonymous"></script>
 	<script
   src="https://code.jquery.com/jquery-3.4.1.min.js"
@@ -15,19 +16,10 @@
   <script type="text/javascript">
   	function mobile_menu(){
   		$('#header_links_container_mobile').toggle();
+  		$('#menu_icon').toggle();
+  		$('#close_menu_icon').toggle();
   	}
   </script>
-  <style type="text/css">
-  	#majed_text{
-  		display: flex;
-  		flex-direction: row-reverse;
-  		justify-content: space-between;
-  		align-items: center;
-  	}
-  	#majed_text img{
-  		transform: scale(0.85);
-  	}
-  </style>
 </head>
 <body>
 	<div id="clouds_body">
@@ -44,12 +36,16 @@
 						<img src="../IMAGES/logo.png">
 					</div>
 					<div id="menu_button" onclick="mobile_menu()">
-						<img src="../IMAGES/phone/1.png">
+						<div id="menu_button_content">
+							<i id="menu_icon" class="fas fa-bars"></i>
+							<i id="close_menu_icon" class="fas fa-times"></i>
+						</div>
+						<img src="../IMAGES/phone/menu.png">
 						<!-- <i class="fas fa-bars"></i> -->
 					</div>
 					<div id="header_divider"></div>
 					<div id="header_divider_mobile">
-						<img src="../IMAGES/phone/2.png">
+						<img src="../IMAGES/phone/aboutusdivider.png">
 					</div>
 				</div>
 				<div id="header_links_container">

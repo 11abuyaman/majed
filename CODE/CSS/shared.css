@@ -22,7 +22,6 @@ body, #fbody, #main_container{
     background-attachment: fixed;
     background-position: bottom;
     width: 100%;
-    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -185,6 +184,8 @@ body {
 #header_links_container_mobile{
 	display: none;
 	width: 100%;
+	padding: 0 50px;
+	padding-bottom: 10px;
 }
 #header_links_container_mobile a{
 	display: block;
@@ -195,16 +196,35 @@ body {
 	padding-bottom: 20px;
     border-top: 1px solid rgba(0,0,0,0.3); 
 }
-#header_divider_mobile{
-	position: absolute;
-	bottom: -25px;
-	z-index: -1;
+#menu_button{
+	color: #fff;
+	font-size: 2em;
+	margin: 20px;
+	display: none;
+	position: relative;
 }
+#menu_button_content{
+	position: absolute;
+	top: 0; bottom: 0; right: 0; left: 0;
+	display:flex; justify-content: center;
+	align-items: center;
+}
+#close_menu_icon{
+	display: none;
+}
+#header_divider_mobile{
+	visibility: hidden;
+	position: absolute;
+	bottom: -23px;
+	z-index: 5;
+}
+
 
 /* Footer */
 #footer{
 	position: relative;
 	width: 100%;
+	height: auto;
 }
 #footer_background{
 	width: 100%; max-width: 1114px;
@@ -272,13 +292,6 @@ body {
 	overflow: auto;
 }
 
-#menu_button{
-	color: #fff;
-	font-size: 2em;
-	padding: 20px;
-	display: none;
-}
-
 #content{
 	display: flex;
 	flex-direction: column;
@@ -314,6 +327,7 @@ body {
 	align-items: center;
 }
 
+
 /* MOBILE SIZING STYLES */
 @media only screen and (max-device-width: 480px) {
 	#header_main_container{
@@ -321,6 +335,9 @@ body {
 	    max-width: 100%;
 	    padding: 0 !important;
 	    margin: 0 !important;
+	}
+	#header_divider_mobile{
+		visibility: visible;
 	}
 	#content{
 		font-size: 1.75em;

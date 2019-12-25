@@ -1,0 +1,23 @@
+#majed_text{
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-between;
+	align-items: center;
+}
+#majed_text img{
+	transform: scale(0.9);
+	margin-bottom: -100px;
+	margin-right: -140px;
+}
+#header_links_container_mobile{
+	background-color: #3778FA;
+}
+
+/* MOBILE SIZING STYLES */
+@media only screen and (max-device-width: 480px) {
+	#majed_text img{
+		transform: scale(0.9);
+		margin-bottom: -220px;
+		margin-right: -130px;
+	}
+}
