@@ -1,3 +1,5 @@
+
+/* Fonts */
 @font-face {
 	font-family: 'bahij';
 	src: 
@@ -5,14 +7,26 @@
 		format('truetype');
 }
 
-html, 
-body {
+/* - - - - - - - - - - - - - - - - - - */
+html,body{
     height: 100%;
 }
-
+body, #fbody, #main_container{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+#clouds_body{
+	background-image: url(../IMAGES/cloud.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: bottom;
+    width: 100%;
+}
 #fbody{
-	height: 100%;
+	flex: 1;
 	margin: 0 auto;
+	justify-content: space-between;
 }
 body {
 	background-image: url('../IMAGES/bg.png');
@@ -21,15 +35,10 @@ body {
 	background-size: cover;
 	font-family: 'bahij';
 }
-#main_container{
-	height: 100%;
-	background-image: url('../IMAGES/cloud.png');
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-position: bottom;
-}
-#fbody{
-	height: 100%;
+
+/* General menu (header & navbar)*/
+#header_main_container{
+	
 }
 #header_container{
 	display: flex;
@@ -111,6 +120,12 @@ body {
 	max-height: 163px;
 	height: 100%;
 	margin-right: -2px;
+	transition: .4s;
+	overflow: hidden;
+}
+.header_link:hover{
+	/*-webkit-box-shadow: inset 0px 0px 20px 5px rgba(0,0,0,0.3); 
+	box-shadow: inset 0px 0px 20px 5px rgba(0,0,0,0.3);*/
 }
 .header_link a{
 	color: #fff;
@@ -120,44 +135,87 @@ body {
 	font-size: 1.5em;
 	line-height: 1em;
 	font-style: italic;
+	transition: .3s;
 }
-
+.header_link:hover a{
+	text-decoration: none;
+	text-shadow: 0px 0px 8px rgba(206,89,55,0.6);
+}
 #header_one{
 	min-height: 134px;
 	background-image: url('../IMAGES/header/1.png');
+}
+#header_one:hover{
+	background-image: url('../IMAGES/header/1hover.png');
 }
 #header_two{
 	min-height: 163px;
 	background-image: url('../IMAGES/header/2.png');
 }
+#header_two:hover{
+	background-image: url('../IMAGES/header/2hover.png');
+}
 #header_three{
 	min-height: 138px;
 	background-image: url('../IMAGES/header/3.png');
+}
+#header_three:hover{
+	background-image: url('../IMAGES/header/3hover.png');
 }
 #header_four{
 	min-height: 149px;
 	background-image: url('../IMAGES/header/4.png');
 }
+#header_four:hover{
+	background-image: url('../IMAGES/header/4hover.png');
+}
 #header_five{
 	min-height: 150px;
 	background-image: url('../IMAGES/header/5.png');
 }
+#header_five:hover{
+	background-image: url('../IMAGES/header/5hover.png');
+}
 
+/* Mobile menu (navbar)*/
+#header_links_container_mobile{
+	display: none;
+	width: 100%;
+}
+#header_links_container_mobile a{
+	display: block;
+	text-align: center;
+	color: #fff;
+	font-size: 2em;
+	padding-top: 20px;
+	padding-bottom: 20px;
+    border-top: 1px solid rgba(0,0,0,0.3); 
+}
+#header_divider_mobile{
+	position: absolute;
+	bottom: -25px;
+	z-index: -1;
+}
+
+/* Footer */
 #footer{
-	color: white;
-	max-height: 242px;
-	height: 100%;
-	max-width: 1114px;
-	background-image: url('../IMAGES/footer.png');
-	background-size: 100%;
-	background-repeat: no-repeat;
-	background-position: center;
+	position: relative;
+	width: 100%;
+}
+#footer_background{
+	width: 100%; max-width: 1114px;
+	height: 100%; max-height: 242px;
+}
+#footer_content{
+	position: absolute;
+	top: 25%; left: 0; right: 0; bottom: 0;
+	z-index: 1;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	padding-top: 50px;
-	width: 100%;
+	padding: 0 35px;
+	color: #fff;
 }
 
 @media only screen and (max-width: 920px) {
@@ -167,22 +225,16 @@ body {
 	}
 }
 
-#content{
-	margin-top: 50px;
-	margin-bottom: 50px;
-}
-
 #page_content{
 	width: 100%;
 	position: relative;
 }
 
 #title_container{
-	position: absolute;
-    top: -70px;
-    right: calc(50% - 200px);
-    z-index: 2;
+	position: relative;
+    margin-top: -70px;
     transform: scale(0.75);
+    max-width: 390px;
 }
 #title{
 	position: absolute;
@@ -201,6 +253,7 @@ body {
 #page_content_border{
 	width: 100%;
 }
+
 #page_content_content{
 	position: absolute;
 	top: 50px;
@@ -222,27 +275,64 @@ body {
 	display: none;
 }
 
-#header_links_container_mobile{
-	display: block;
+#content{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+#content img{
 	width: 100%;
 }
-#header_links_container_mobile a{
-	display: block;
-	background:blue;
-	text-align: center;
-	color: #fff;
-	font-size: 2em;
-	padding-top: 20px;
-	padding-bottom: 10px; 
+#middle{
+	margin-top: -10px; 
+	margin-bottom: -10px; 
+	background-image: url('../IMAGES/borderp/bodywbg.png');
+	max-width: 1108px;
+	width: 100%;
+	background-repeat: repeat-y;
+	background-size: 100%;
 }
 
-#header_divider_mobile{
-	position: absolute;
-	bottom: -25px;
-	z-index: -1;
-
+#middle_content{
+	text-align: right;
+	font-size: 1.2rem;
+	padding-left: 13%;
+	padding-right: 13%;
+	padding-top: 35px;
+	padding-bottom: 35px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
+
+/* MOBILE SIZING STYLES */
 @media only screen and (max-device-width: 480px) {
+	#header_main_container{
+		width: 100%;
+	    max-width: 100%;
+	    padding: 0 !important;
+	    margin: 0 !important;
+	}
+	#content{
+		font-size: 1.75em;
+	}
+	#title_container {
+	    transform: scale(0.9); 
+	    margin-bottom: 30px;
+	    margin-top: -100px;
+	    font-size: 2rem;
+	}
+	#title_container h1{
+		font-size: 3rem;
+	}
+	#middle_content{
+		font-size: 2rem;
+	}
 	.container{
 		max-width: 95%;
 	}
@@ -268,17 +358,6 @@ body {
 	#header_divider{
 		display: none;
 	}
-	
-}
-
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-	
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -295,10 +374,6 @@ body {
 		margin-top: 0px;
 		font-size: 1.3em;
 	}
-	#title_container{
-	    top: 20px;
-	    transform: scale(1);
-	}
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -306,9 +381,5 @@ body {
 	.header_link a{
 		margin-top: 17px;
 		font-size: 1.5em;
-	}
-	#title_container{
-	    top: 20px;
-	    transform: scale(1);
 	}
 }
