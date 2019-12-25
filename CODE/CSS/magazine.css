@@ -1,0 +1,79 @@
+#header{
+	background-color: #762aff;
+}
+#header_links_container_mobile{
+	background-color: #cb2dfe;
+}
+#header_divider {
+    background-color: #9a23ff; /*9a23ff*/
+}
+#middle {
+    background-image: url(../IMAGES/border/magazinebody.png);
+}
+p{
+	text-align: center;
+}
+#magazine{
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: center;
+	align-items: center;
+}
+.magazine-info{
+	direction:rtl;
+}
+
+#magazine_cover{
+	max-width: 300px;
+	transform: rotate(-7deg);
+	margin-right: 100px;
+	-webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
+	-moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
+	box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
+}
+.title{
+	font-weight: bold;
+	color: #9036ff;
+}
+ul{
+	padding: 0;
+}
+ul li{
+	list-style: none;
+	margin-bottom: 12px;
+}
+
+#magazine_cloumn_one{
+	display: flex;
+	flex-direction: c
+	flex: 2;
+}
+#magazine_cloumn_two{
+	display: flex;
+	flex: 1;
+}
+/* MOBILE SIZING STYLES */
+@media only screen and (max-device-width: 480px) {
+	#middle_content {
+		text-align: center;
+	    font-size: 1.6rem;
+	}
+	#magazine_cover{
+		transform: rotate(0deg);
+		margin: 25px 0;
+	}
+}
+
+@media only screen and (max-device-width: 768px) {
+	#middle_content {
+		text-align: center;
+	    font-size: 1.6rem;
+	}
+	#magazine_cover{
+		transform: rotate(0deg);
+		margin: 25px 0;
+	}
+	.container, .container-md, .container-sm {
+	    max-width: 880px;
+	}
+}
