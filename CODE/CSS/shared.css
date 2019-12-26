@@ -7,7 +7,7 @@
 		format('truetype');
 } */
 
-html, body {
+html, body, #clouds_body {
     height:100%;
 }
 /* - - - - - - - - - - - - - - - - - - */
