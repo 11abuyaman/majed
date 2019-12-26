@@ -1,14 +1,14 @@
 
 /* Fonts */
-@font-face {
+/* @font-face {
 	font-family: 'bahij';
 	src: 
 	url('../FONTS/Bahij.ttf')
 		format('truetype');
-}
+} */
 
 html, body {
-    overflow: auto;
+    height:100%;
 }
 /* - - - - - - - - - - - - - - - - - - */
 body {
