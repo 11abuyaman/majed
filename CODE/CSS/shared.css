@@ -1,14 +1,15 @@
 
 /* Fonts */
-@font-face {
+/* @font-face {
 	font-family: 'bahij';
 	src: 
 	url('../FONTS/Bahij.ttf')
 		format('truetype');
 }
-
+ */
 /* - - - - - - - - - - - - - - - - - - */
-html, body {
+html, body, #clouds_body {
+	height:100%;
 }
 body{
 	background-image: url('../IMAGES/bg.png');
@@ -25,6 +26,7 @@ body{
     width: 100%;
     display: flex;
     flex-direction: column;
+	justify-content: space-between;
     flex: 1;
 }
 
