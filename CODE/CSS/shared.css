@@ -8,8 +8,10 @@
 }
 
 /* - - - - - - - - - - - - - - - - - - */
-html, body, #clouds_body {
-	height:100%;
+
+/* General containers */
+html, body {
+	min-height:100%;
 }
 body{
 	background-image: url('../IMAGES/bg.png');
@@ -24,10 +26,10 @@ body{
     background-attachment: fixed;
     background-position: bottom;
     width: 100%;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
-	justify-content: space-between;
-    flex: 1;
+    justify-content: space-between;
 }
 
 /* General menu (header & navbar)*/
@@ -212,7 +214,6 @@ body{
 
 /* Footer */
 	#footer{
-		    display: block;
 		position: relative;
 		width: 100%;
 	}

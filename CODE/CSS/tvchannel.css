@@ -1,0 +1,38 @@
+#header{
+	background-color: #9a0054;
+}
+#header_links_container_mobile{
+	background-color: #cc0068;
+}
+#header_divider {
+    background-color: #cc0068;
+}
+#middle {
+    background-image: url(../IMAGES/tvchannel/tvchannelsbody.png);
+}
+#middle_content{
+	text-align: center;
+}
+#middle_content .row img{
+	max-width: 180px;
+}
+#col-title-container{
+	position: absolute;
+	bottom: 0;
+	width: 141px;
+	left: calc(50% - 65px);
+}
+#col-title-container h3{
+	position: absolute;
+	bottom: 0;
+	top: 13px;
+	right: 0;
+	left: 0;
+	color: #fff;
+	font-size: 21px;
+    transform: rotate(-5deg);
+}
+
+/* MOBILE SIZING STYLES */
+@media only screen and (max-device-width: 480px) {
+}
