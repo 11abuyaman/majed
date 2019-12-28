@@ -15,7 +15,7 @@
 }
 #headerborder_background{
 	position: absolute;
-	top: 50px;
+	top: 30px;
 	right: 30px;
 	left: 30px;
 	bottom: 30px;
@@ -47,11 +47,15 @@
 	align-items: center;
 	transform: rotate(-5deg);
 	color: #fff;
-
+}
+.d-block.col-4.citem img{
+	width: unset;
+	max-width: 175px;
+	height: 185px;
 }
 #headerborder_mobile_background{
 	position: absolute;
-	top: 50px;
+	top: 30px;
 	right: 30px;
 	left: 30px;
 	bottom: 20px;
