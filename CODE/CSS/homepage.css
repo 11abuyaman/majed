@@ -92,7 +92,7 @@
 	margin-top: -8px;
 }
 #shows_slider{
-	width: 86%;
+	width: 95%;
 	text-align: center;
 	margin: 50px 0;
 }
@@ -102,6 +102,30 @@
 	padding: 75px;
 	border: 1px solid #fff;
 	border-radius: 50px;
+}
+/*#shows_slider img,#episodes_slider img{
+    width: unset;
+}*/
+.d-block{
+	display: flex !important;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-direction: row;
+}
+
+.d-block a{
+	display: flex !important;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+}
+.d-block a img{
+	/*width: 100%;*/
+	max-height: 180px;
+}
+.s3inner {
+    height: 182px;
+    display: flex;
 }
 .carousel-item-next, .carousel-item-prev, .carousel-item.active{
 	display: flex;

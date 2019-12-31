@@ -431,6 +431,38 @@
 	}
 }
 
+@media only screen and (max-width: 920px){
+	#footer_content{
+		position: absolute;
+		top: 25%; left: 0; right: 0; bottom: 0;
+		z-index: 1;
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: space-around;
+		align-items: center;
+		padding: 0 35px;
+		color: #fff;
+	}
+	#footermajedlogo{
+		display: none;
+	}
+	#footer_social{
+		display: flex;
+		flex-direction: column;
+		align-items:flex-end;
+	}
+	#footerminimajedlogo{
+		display: inline-block;
+	}
+}
+767
+
+@media only screen and (min-width: 767px){
+	.header_link a{
+	    margin-top: -65px;
+	    font-size: 0.95rem;
+	}
+}
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
 	.header_link a{

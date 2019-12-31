@@ -77,3 +77,15 @@ ul li{
 	    max-width: 880px;
 	}
 }
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 991px) {
+	#middle_content {
+		text-align: center;
+	    font-size: 1.6rem;
+	}
+	#magazine_cover{
+		transform: rotate(0deg);
+		margin: 25px 0;
+	}
+}
