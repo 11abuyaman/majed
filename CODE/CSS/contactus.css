@@ -68,7 +68,7 @@ input:nth-child(even){
 }
 
 /* MOBILE SIZING STYLES */
-@media only screen and (max-device-width: 480px) {
+@media only screen and (max-device-width: 480px),(max-width: 600px){
 	input:nth-child(even){
 		margin-right: 0;
 	}

@@ -148,7 +148,7 @@ img.d-block.w-100{
 }
 
 /* MOBILE SIZING STYLES */
-@media only screen and (max-device-width: 480px) {
+@media only screen and (max-device-width: 480px){
 	#headerborder_mobile{
 		display: block;
 	}
@@ -160,23 +160,6 @@ img.d-block.w-100{
 	}
 }
 
-
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-	
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-	
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-	
-}
-
 @media only screen and (max-width: 992px){
 	#header_main_container{
 		margin-bottom: 100px;
@@ -185,7 +168,94 @@ img.d-block.w-100{
 
 @media only screen and (max-width: 768px){
 	#header_main_container{
-		margin-bottom: 20px;
+		margin-bottom: 50px;
 	}
+	/* content */
+		#shows_slider{
+		    margin-top: 0;
+		}
+		.carousel-control-next {
+		    right: -60px;
+		}
+		.carousel-control-prev {
+		    left: -60px;
+		}
+		#episodes_slider img.d-block.w-100{
+			width: 100% !important;
+		}
+		#headerborder_background {
+		    top: 40px;
+		    right: 30px;
+		    left: 30px;
+		    bottom: 30px;
+		    z-index: -2;
+		    background-size: 100%;
+		}
+		#header_links_container {
+		    transform: scale(0.9);
+		    z-index: 1;
+		    margin-top: -5px;
+		}
+		#episodes_slider_title img {
+		    width: 100%;
+		    max-width: 416px;
+		}
+		#episodes_slider_title_container h4{
+			font-size: 1.15rem;
+		}
+		.carousel-control-next img, .carousel-control-prev img {
+		    width: 100% !important;
+		    max-width: 35px;
+		}
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+	/* header */
+		#header{
+			padding: 0 30px;
+			background-color: #762aff;
+		}
+		#headerborder_mobile{
+			display: block;
+		}
+		#headerborder_mobile_background {
+		    top: 15px;
+		    right: 15px;
+		    left: 10px;
+		    bottom: 10px;
+		}
+		#headerborder{
+			display: none;
+		}
+	/* content */
+		#shows_slider{
+		    margin-top: 0;
+		}
+		.carousel-control-next {
+		    right: -40px;
+		}
+		.carousel-control-prev {
+		    left: -40px;
+		}
+		#episodes_slider img.d-block.w-100{
+			width: 100% !important;
+		}
+		#episodes_slider {
+		    width: 100%;
+		    margin: 0;
+		    padding: 35px;
+		    border: 1px solid #fff;
+		    border-radius: 20px;
+		}
+		.carousel-control-next img, .carousel-control-prev img {
+		    width: 100% !important;
+		    max-width: 25px;
+		}
+}
+
+/* Extra Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 520px) {
+	
 }
 
