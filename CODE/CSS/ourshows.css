@@ -21,8 +21,21 @@
 	max-height: 197px;
 	max-width: 356px;
 }
-#top_border img{
-	width: 100%;
+#top_border #top_border_left, #top_border #top_border_right{
+	min-width: 34%;
+	max-width: 34%;
+}
+#top_border_left{
+	text-align: left;
+}
+#top_border_right{
+	text-align: right;
+}
+#top_border #top_border_logo{
+	width: 32%;
+}
+#top_border #top_border_left img , #top_border #top_border_right img{
+	width: 67%;
 }
 #content{
 	width: 100%;
@@ -83,13 +96,55 @@
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 991px) {
+	/*#top_border_logo{
+		display: none;
+	}
+	.top_border_logo{
+		display: flex;
+	}
+	#inbetween_content p{
+
+	}
+	#inbetween_content img {
+	    width: 50%;
+	}*/
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+	ul li {
+	    font-size: 1.1rem;
+	    margin-bottom: 6px;
+	}
+	h3{
+		font-size: 1.5rem;
+	}
+	h1{
+		font-size: 2.25rem;
+		margin-bottom: 20px;
+	}
+	p{
+		font-size: 1.25rem;
+	}
 	#top_border_logo{
 		display: none;
 	}
 	.top_border_logo{
 		display: flex;
 	}
+	#inbetween_content p{
+		font-size: 1.15rem;
+	}
+	#inbetween_content img {
+	    width: 50%;
+	}
+}
 
+/* Extra Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 520px) {
+	ul li{
+		margin-bottom: 4px;
+	}
 }
 
 

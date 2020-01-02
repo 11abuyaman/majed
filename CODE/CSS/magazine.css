@@ -89,3 +89,28 @@ ul li{
 		margin: 25px 0;
 	}
 }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+	ul li {
+	    font-size: 1.1rem;
+	    margin-bottom: 6px;
+	}
+	h3{
+		font-size: 1.5rem;
+	}
+	h1{
+		font-size: 2.25rem;
+		margin-bottom: 20px;
+	}
+	p{
+		font-size: 1.25rem;
+	}
+}
+
+/* Extra Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 520px) {
+	ul li{
+		margin-bottom: 4px;
+	}
+}
