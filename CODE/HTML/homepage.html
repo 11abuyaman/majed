@@ -203,8 +203,16 @@
 			const shows_group_container = '<div class="carousel-item items3"><div class="d-block col-12 citem">';
 
 			list_of_shows = $('.ashow');
+			let chunk = 5;
+			if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+				alert('mobile');
+				chunk = 3;
+			}else{
+				alert('desktop');
+				chunk = 5;
+			}
 
-			let i,j,temparray,chunk = 5;
+			let i,j,temparray;
 
 			for(i=0,j=list_of_shows.length; i<j; i+=chunk){
 				let temp = list_of_shows.slice(i,i+chunk);
