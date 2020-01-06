@@ -138,6 +138,9 @@
 	#inbetween_content img {
 	    width: 50%;
 	}
+	#inbetween_content{
+		padding-top: 0;
+	}
 }
 
 /* Extra Extra small devices (phones, 600px and down) */

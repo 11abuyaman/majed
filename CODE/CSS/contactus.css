@@ -98,4 +98,39 @@ input:nth-child(even){
 	#first_group .col-sm-6:nth-child(2){
 		padding-right: 0;
 	}
+	#first_group .col-sm-6{
+		max-width:100%; 
+	}
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+	input:nth-child(even){
+		margin-right: 0;
+	}
+	form div{
+		flex-direction: column;
+	}
+	button{
+		margin: 0;
+	}
+	.form_group{
+		margin: 0;
+	}
+	.form_send{
+		justify-content: center;
+	}
+	button,input,textarea{
+		margin-top: 20px;
+	}
+	#first_group .col-sm-6:nth-child(2){
+		padding-right: 0;
+	}
+	#first_group .col-sm-6{
+		max-width:100%; 
+	}
+	#first_group .col-sm-6{
+		max-width:100%; 
+	}
 }
